@@ -1,0 +1,9 @@
+<button mat-raised-button type="button" color="primary" style="margin: 10px;" (click)="cancelNavBack()" >Back to Main</button>
+<app-dashboard-status
+  [allTables]="allTables$ | async"
+  [availableTables]="availableTables$ | async"
+  [cleaningTables]="cleaningTables$ | async"
+  [reservedTables]="reservedTables$ | async"
+  [totalSeatsOccupied]="totalReservedSeats$ | async">
+</app-dashboard-status>
+<app-tables [allTables]="allTables$ | async" (emitAddTable)="addTable()" (emitCleanTable)="cleanTable($event)" (emitMakeAvailableTable)="makeAvailable($event)" (emitReserveTable)="reserveTable($event)"></app-tables>

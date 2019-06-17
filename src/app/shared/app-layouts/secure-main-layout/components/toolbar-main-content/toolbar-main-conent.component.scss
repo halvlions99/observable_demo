@@ -1,0 +1,47 @@
+.toolbar {
+  padding-left: 8px;
+  padding-right: 8px;
+  box-shadow: 0 16px 38px -12px rgba(0, 0, 0, 0.05), 0 4px 25px 0px rgba(0, 0, 0, 0.05), 0 8px 10px -5px rgba(0, 0, 0, 0.5);
+}
+.toolbar_transparent {
+  padding-left: 15px;
+  padding-right: 8px;
+  background: rgba(31, 31, 31, 0.4);
+}
+
+.toolbar_icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.listCompanyBtn {
+  border-radius: 20px;
+  background-color: white;
+  font-weight: 600;
+}
+
+.logo_icon {
+  width: 50px;
+  margin: 10px;
+  margin-top: 15px;
+}
+
+.app-title {
+  font-size: x-large;
+}
+
+.menu_login {
+  width: 75px;
+}
+
+.menu_name {
+  padding-left: 5px;
+  color: #003f56;
+  font-weight: 400;
+}
+
+.company_dashboard {
+  width: 155px;
+}

@@ -1,1 +1,121 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/theming';
+@include mat-core();
+
+/* For use in src/lib/core/theming/_palette.scss */
+$md-mcgpaletteblue: (
+  50: #e0e8eb,
+  100: #b3c5cc,
+  200: #809fab,
+  300: #4d7989,
+  400: #265c6f,
+  500: #003f56,
+  600: #00394f,
+  700: #003145,
+  800: #00293c,
+  900: #001b2b,
+  A100: #65b5ff,
+  A200: #329cff,
+  A400: #0083fe,
+  A700: #0076e5,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #ffffff,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #ffffff,
+    A700: #ffffff
+  )
+);
+$md-mcgpaletteorange: (
+  50: #fdede5,
+  100: #fad1bd,
+  200: #f6b291,
+  300: #f29365,
+  400: #f07c44,
+  500: #ed6523,
+  600: #eb5d1f,
+  700: #e8531a,
+  800: #e54915,
+  900: #e0370c,
+  A100: #ffffff,
+  A200: #ffded8,
+  A400: #ffb4a5,
+  A700: #ff9f8b,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #000000,
+    600: #000000,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000
+  )
+);
+$md-mcgpalettegrey: (
+  50: #f7f8f9,
+  100: #ecedef,
+  200: #e0e1e5,
+  300: #d3d4da,
+  400: #c9cbd2,
+  500: #c0c2ca,
+  600: #babcc5,
+  700: #b2b4bd,
+  800: #aaacb7,
+  900: #9c9fab,
+  A100: #ffffff,
+  A200: #ffffff,
+  A400: #e9edff,
+  A700: #cfd8ff,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #000000,
+    500: #000000,
+    600: #000000,
+    700: #000000,
+    800: #000000,
+    900: #000000,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000
+  )
+);
+$app-primary: mat-palette($md-mcgpaletteblue, 500);
+$app-accent: mat-palette($md-mcgpaletteorange, 700);
+$app-warn: mat-palette($mat-red);
+$app-theme: mat-light-theme($app-primary, $app-accent, $app-warn);
+@include angular-material-theme($app-theme);
+@mixin app-light-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+  $warn: map-get($theme, warn);
+}
+.app-light-theme {
+  $app-light-primary: mat-palette($md-mcgpalettegrey, 100);
+  $app-light-accent: mat-palette($md-mcgpaletteorange, 700);
+  $app-light-warn: mat-palette($mat-red);
+  $app-light-theme: mat-light-theme($app-light-primary, $app-light-accent, $app-light-warn);
+  @include angular-material-theme($app-light-theme);
+}
+body .mat-drawer-container {
+  background-color: #e2dfdf;
+}

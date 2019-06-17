@@ -1,0 +1,21 @@
+.app-sidenav {
+  width: 265px;
+  background-color: #eee;
+}
+
+.sidenav_content {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.content_wrapper {
+  flex: 1 1 auto;
+  position: relative; /* need this to position inner content */
+  overflow-y: auto;
+  background-color: #eee;
+}
+
+.content {
+  margin: 8px;
+}

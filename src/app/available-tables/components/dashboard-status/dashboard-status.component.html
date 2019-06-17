@@ -1,0 +1,18 @@
+<app-general-status
+  [allTables]="allTables"
+  [availableTables]="availableTables"
+  [cleaningTables]="cleaningTables"
+  [reservedTables]="reservedTables"
+  [totalSeatsOccupied]="totalSeatsOccupied"
+></app-general-status>
+<div class="flex-container">
+  <div class="flex-item">
+    <app-server-status [reservedTables]="reservedTables"></app-server-status>
+  </div>
+  <div class="flex-item">
+    <app-busser-status [cleaningTables]="cleaningTables"></app-busser-status>
+  </div>
+  <div class="flex-item">
+    <app-cashflow-status [seatCount]="totalSeatsOccupied"></app-cashflow-status>
+  </div>
+</div>

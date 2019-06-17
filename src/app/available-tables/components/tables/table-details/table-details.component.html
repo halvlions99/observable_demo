@@ -1,0 +1,19 @@
+<div class="flex-item">
+<mat-card [style.background-color]="getbackgroundColor">
+  <mat-card-content>
+      <div class="table-background" style="background-image: url('assets/table_and_chairs.gif')">
+        <div class="table-details-container">
+          <div class="table-details">
+            {{table.tableNumber}}<br/>
+            {{table.tableStatus}} <br/>
+          </div>
+        </div>
+      </div>
+  </mat-card-content>
+  <mat-card-actions>
+      <button mat-raised-button type="button" color="primary" *ngIf="table.tableStatus === 'Available'" (click)="reserveTable()" >Reserve</button>
+      <button mat-raised-button type="button" color="primary" *ngIf="table.tableStatus === 'Reserved'" (click)="cleanTable()">Clean</button>
+      <button mat-raised-button type="button" color="primary" *ngIf="table.tableStatus === 'Cleaning'" (click)="makeAvailable()">Available</button>
+  </mat-card-actions>
+</mat-card>
+</div>

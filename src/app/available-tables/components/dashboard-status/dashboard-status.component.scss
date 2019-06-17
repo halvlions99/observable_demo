@@ -1,0 +1,13 @@
+.flex-item {
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  min-width: 250px;
+  max-width: 350px;
+  width: 100%;
+}
+.flex-container {
+  display: flex;
+  flex-flow: wrap;
+  margin: 10px;
+}
