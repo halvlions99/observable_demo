@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { AvailableTable } from '@app/available-tables/store/available-tables.interface';
+import { AvailableTable } from '../../store/available-tables.interface';
 
 @Component({
   selector: 'app-dashboard-status',

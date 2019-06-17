@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { AvailableTable, TablesStatus } from '@app/available-tables/store/available-tables.interface';
-import { AvailableTablesStore } from '@app/available-tables/store/available-tables.store';
+import { AvailableTable, TablesStatus } from '../../store/available-tables.interface';
+import { AvailableTablesStore } from '../../store/available-tables.store';
 import { Guid } from 'guid-typescript';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';

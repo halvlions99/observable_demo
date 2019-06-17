@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes, PreloadAllModules } from '@angular/router';
-import { SecureLayoutComponent } from '@shared/app-layouts/secure-main-layout/containers/layout/secure-layout.component';
+import { SecureLayoutComponent } from '../app/shared/app-layouts/secure-main-layout/containers/layout/secure-layout.component';
 
 import { LandingPageComponent } from './landing-page/landing-page.component';
 

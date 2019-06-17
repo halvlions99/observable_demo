@@ -3,8 +3,8 @@ import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Router } from '@angular/router';
-import { LandingPageComponent } from '@app/landing-page/landing-page.component';
-import { MaterialModule } from '@app/material.module';
+import { LandingPageComponent } from '../landing-page/landing-page.component';
+import { MaterialModule } from '../material.module';
 
 import { FooterComponent } from './app-layouts/secure-main-layout/components/footer/footer.component';
 import { SideNavConentComponent } from './app-layouts/secure-main-layout/components/side-nav-content/side-nav-conent.component';

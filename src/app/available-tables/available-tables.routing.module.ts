@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { SecureLayoutComponent } from '@shared/app-layouts/secure-main-layout/containers/layout/secure-layout.component';
+import { SecureLayoutComponent } from '../shared/app-layouts/secure-main-layout/containers/layout/secure-layout.component';
 
 import { DashboardComponent } from './container/dashboard/dashboard.component';
 

@@ -1,5 +1,5 @@
 import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
-import { AvailableTable, TablesStatus } from '@app/available-tables/store/available-tables.interface';
+import { AvailableTable, TablesStatus } from '../../../store/available-tables.interface';
 
 @Component({
   selector: 'app-table-details',

@@ -5,7 +5,7 @@ import * as actions from './available-tables.actions';
 import * as selectors from './available-tables.selectors';
 
 import { Observable } from 'rxjs';
-import { AppState } from '@app/app.reducer';
+import { AppState } from '../../app.reducer';
 import { AvailableTable } from './available-tables.interface';
 
 export const getAvailableTablesState = (state: AppState) => state.availableTables;
