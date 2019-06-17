@@ -34,7 +34,6 @@
     "@angular/cli": "~8.1.0-beta.2",
     "@angular/compiler-cli": "~8.1.0-next.2",
     "@angular/language-service": "~8.1.0-next.2",
-    "@ngrx/store-devtools": "^8.0.0-beta.26",
     "@types/jasmine": "~3.3.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
