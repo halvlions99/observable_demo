@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { AvailableTable, TablesStatus } from '../../store/available-tables.interface';
 import { AvailableTablesStore } from '../../store/available-tables.store';
+import { AvailableTableStoreService } from '../../store/available-tables.service';
 import { Guid } from 'guid-typescript';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
@@ -18,7 +19,10 @@ export class DashboardComponent implements OnInit {
   totalReservedSeats$: Observable<number>;
   allTables$: Observable<AvailableTable[]>;
 
-  constructor(private router: Router, private tablesStore: AvailableTablesStore) { }
+  constructor(private router: Router,
+    private tablesStore: AvailableTablesStore,
+    // private tablesStore: AvailableTableStoreService
+  ) { }
 
   ngOnInit() {
     this.allTables$ = this.tablesStore.allTables$;
