@@ -3,7 +3,10 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { EffectsModule } from '@ngrx/effects';
 import { StoreModule } from '@ngrx/store';
-import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+// If showing devtools uncomment
+// import { StoreDevtoolsModule } from '@ngrx/store-devtools';
+// If showing devtools add to package.json
+// "@ngrx/store-devtools": "^8.0.0-beta.26",
 
 import { reducers } from './app.reducer';
 
@@ -29,7 +32,8 @@ const stores = [
     RouterModule,
     HttpClientModule,
     StoreModule.forRoot(reducers),
-    StoreDevtoolsModule.instrument({ maxAge: 100 }),
+    // If showing devtools uncomment
+    // StoreDevtoolsModule.instrument({ maxAge: 100 }),
     EffectsModule.forRoot([...effects])
   ],
   providers: [...services, ...stores],
